@@ -143,6 +143,7 @@ export function SinglePricingCard({
               secondaryButton={secondaryButton}
               testimonials={testimonials}
               currentTestimonialIndex={currentTestimonialIndex}
+              setCurrentTestimonialIndex={setCurrentTestimonialIndex}
               isInView={isInView}
               animationEnabled={animationEnabled}
               cardClassName={cardClassName}
@@ -163,6 +164,7 @@ export function SinglePricingCard({
             secondaryButton={secondaryButton}
             testimonials={testimonials}
             currentTestimonialIndex={currentTestimonialIndex}
+            setCurrentTestimonialIndex={setCurrentTestimonialIndex}
             isInView={isInView}
             animationEnabled={animationEnabled}
             cardClassName={cardClassName}
@@ -176,6 +178,7 @@ export function SinglePricingCard({
 interface SinglePricingCardContentProps
   extends Omit<SinglePricingCardProps, "className" | "maxWidth" | "testimonialRotationSpeed"> {
   currentTestimonialIndex: number
+  setCurrentTestimonialIndex: (index: number) => void
   isInView: boolean
   cardClassName?: string
 }
@@ -194,6 +197,7 @@ function SinglePricingCardContent({
   secondaryButton,
   testimonials,
   currentTestimonialIndex,
+  setCurrentTestimonialIndex,
   isInView,
   animationEnabled,
   cardClassName,

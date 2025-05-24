@@ -74,10 +74,10 @@ const Hero = () => {
         {/* Right content - profile image */}
         <div className="flex-1 flex justify-center items-center opacity-0 animate-fade-in-delay-1">
           <div className="relative">
-            {/* Placeholder image - replace with actual profile image */}
+            {/* Your profile image */}
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-gradient-to-br from-brand-100 to-brand-300 flex items-center justify-center">
               <img 
-                src="/placeholder.svg" 
+                src="/lovable-uploads/d4606b81-2b67-4e8d-a08d-fc825fc938da.png" 
                 alt="Akshay Harlalka"
                 className="w-full h-full object-cover"
               />
